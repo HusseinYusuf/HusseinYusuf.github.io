@@ -15,8 +15,8 @@ Web & Software Development: Django, Flask, Laravel, React, Node.js, .NET C#
 
 ### Education
 
-- M.Sc., Computer Engineering and Data ScienceYalova University | Present
-- B.Sc., Computer EngineeringKarabuk University | 2024
+M.Sc., Computer Engineering and Data Science Yalova University | Present
+B.Sc., Computer Engineering Karabuk University | 2024
 
 
 ### Work Experience
