@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; }
+        #project-details { max-width: 800px; margin: auto; }
+        h1 { color: #2c3e50; }
+        h2 { color: #3498db; }
+        ul { list-style: none; padding: 0; }
+        ul li { background: #f8f9fa; margin: 5px 0; padding: 10px; border-radius: 5px; }
+        img { max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div id="project-details">
+        <h1 id="project-title"></h1>
+        <p id="project-description"></p>
+
+        <h2>Features</h2>
+        <ul id="project-features"></ul>
+
+        <h2>Technologies Used</h2>
+        <ul id="project-technologies"></ul>
+
+        <h2>Why This Project?</h2>
+        <p id="project-why"></p>
+
+        <h2>Development Process</h2>
+        <ul id="project-development"></ul>
+
+        <h2>Project Images</h2>
+        <div id="project-images"></div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get("id");
+
+        fetch("projects.json")
+            .then(response => response.json())
+            .then(data => {
+                const project = data.projects.find(p => p.id == projectId);
+                if (project) {
+                    document.getElementById("project-title").textContent = project.title;
+                    document.getElementById("project-description").textContent = project.description;
+
+                    const featuresList = document.getElementById("project-features");
+                    project.features.forEach(feature => {
+                        const li = document.createElement("li");
+                        li.textContent = feature;
+                        featuresList.appendChild(li);
+                    });
+
+                    const techList = document.getElementById("project-technologies");
+                    project.technologies.forEach(tech => {
+                        const li = document.createElement("li");
+                        li.textContent = tech;
+                        techList.appendChild(li);
+                    });
+
+                    document.getElementById("project-why").textContent = project.why;
+
+                    const devList = document.getElementById("project-development");
+                    project.development.forEach(step => {
+                        const li = document.createElement("li");
+                        li.textContent = step;
+                        devList.appendChild(li);
+                    });
+
+                    const imagesContainer = document.getElementById("project-images");
+                    project.images.forEach(img => {
+                        const imageElement = document.createElement("img");
+                        imageElement.src = `images/${img}`; // Adjust path if needed
+                        imagesContainer.appendChild(imageElement);
+                    });
+                } else {
+                    document.getElementById("project-details").innerHTML = "<p>Project not found.</p>";
+                }
+            })
+            .catch(error => console.error("Error loading project:", error));
+    </script>
+</body>
+</html>

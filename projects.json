@@ -1,0 +1,99 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Car Rental Application",
+      "description": "This Car Rental Application is a full-stack web-based system designed to make the car rental process more efficient, user-friendly, and accessible. It allows customers to browse, book, and manage their vehicle rentals online, while providing rental businesses with a powerful administrative panel to oversee operations, fleet management, and payments. The goal of this project is to modernize car rental services by offering a seamless, automated booking experience while improving operational efficiency for businesses.",
+      "features": [
+        "🔹 User Registration & Authentication: Secure sign-up and login for customers and admins, with role-based access control.",
+        "🔹 Car Listings & Availability: Real-time listings of available cars, complete with high-resolution images, specifications, and pricing.",
+        "🔹 Online Booking System: Customers can select a vehicle, specify pickup and drop-off locations, and confirm their rental instantly.",
+        "🔹 Payment Integration: Secure online payments via Stripe, PayPal, and credit/debit cards, with an invoicing system.",
+        "🔹 GPS Tracking & Security: Real-time GPS tracking for vehicles, ensuring safety and monitoring rental usage.",
+        "🔹 Admin Dashboard: A comprehensive interface for businesses to manage vehicles, reservations, and payments.",
+        "🔹 Customer Support & Reviews: A built-in support system allowing customers to raise queries, leave reviews, and receive notifications."
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "React.js", "Laravel", "MySQL", "Stripe", "JWT", "AWS"],
+      "why": "Traditional car rental systems involve a lot of paperwork, long queues, and manual processes that slow down the entire experience. Customers often face difficulties in checking real-time availability, understanding pricing structures, and making secure reservations. This system was built to eliminate those problems by providing a fully automated, user-friendly car rental experience. Rental businesses benefit from automated fleet management, real-time tracking, and secure online payments.",
+      "development": [
+        "📌 Planning & Requirements Gathering: Conducted research on user pain points and business requirements.",
+        "📌 Database Design: Created relational models to efficiently store and retrieve data related to customers, bookings, and payments.",
+        "📌 Frontend Development: Designed a responsive UI with React.js to ensure a smooth and interactive user experience.",
+        "📌 Backend Development: Implemented core functionalities such as authentication, booking management, and payment integration using Laravel and MySQL.",
+        "📌 Testing & Deployment: Conducted rigorous security and performance testing before deploying the system on AWS."
+      ],
+      "images": ["car_rental_1.jpg", "car_rental_2.jpg", "car_rental_3.jpg"]
+    },
+    
+    {
+      "id": 2,
+      "title": "Cinema Booking System",
+      "description": "The Cinema Booking System is a desktop-based application developed in .NET C# that enables efficient movie schedule management, seat reservations, and online ticket sales. It is designed to enhance the customer experience by providing a seamless and interactive way to browse available movies, select showtimes, and book seats with real-time availability tracking.",
+      "features": [
+        "🔹 Movie Schedule Management: Allows cinema administrators to add, modify, and update movie schedules, including showtimes and theater assignments.",
+        "🔹 Seat Reservation System: Provides a visual representation of theater seating, allowing users to choose available seats before booking.",
+        "🔹 Secure Online Payments: Integrated with payment gateways to enable hassle-free ticket purchases via credit/debit cards and e-wallets.",
+        "🔹 QR Code Ticketing: Generates digital tickets with QR codes for easy check-in at the cinema entrance.",
+        "🔹 User Authentication: Secure user accounts with login and registration functionality for ticket purchase history tracking.",
+        "🔹 Admin Dashboard: Provides insights into ticket sales, movie performance, and occupancy rates to optimize business operations."
+      ],
+      "technologies": ["C#", ".NET", "SQL Server", "WPF", "Entity Framework"],
+      "why": "Traditional movie ticket booking often involves long queues, limited payment options, and mismanaged reservations. This system automates the entire process, making it easier for customers to book tickets while helping cinemas efficiently manage seat availability, sales, and promotions.",
+      "development": [
+        "📌 UI/UX Design: Developed an intuitive interface using WPF for a smooth user experience.",
+        "📌 Database Integration: Implemented SQL Server for storing movie schedules, user data, and ticket bookings.",
+        "📌 Business Logic Development: Created core functionalities, including booking validation, seat locking mechanisms, and payment processing.",
+        "📌 Testing & Deployment: Conducted extensive testing to ensure smooth performance before deploying in a live cinema environment."
+      ],
+      "images": ["cinema_booking_1.jpg", "cinema_booking_2.jpg", "cinema_booking_3.jpg"]
+    },
+
+    {
+      "id": 3,
+      "title": "Agriculture Portal",
+      "description": "The Agriculture Portal is a web-based platform integrated with machine learning models to assist farmers in making data-driven decisions regarding crop yield predictions and plant disease detection. By leveraging AI-driven insights, the platform enables farmers to optimize production, reduce risks, and improve agricultural sustainability.",
+      "features": [
+        "🔹 Crop Yield Prediction: Uses machine learning algorithms to forecast crop yields based on soil quality, weather conditions, and past production data.",
+        "🔹 Plant Disease Detection: Employs image recognition models to identify plant diseases and suggest appropriate treatments.",
+        "🔹 Weather Analysis: Integrates real-time weather updates and predictive analytics to help farmers plan their farming activities efficiently.",
+        "🔹 Marketplace for Agricultural Products: Allows farmers to sell produce directly to buyers, cutting out middlemen and increasing profits.",
+        "🔹 AI-Powered Recommendations: Provides personalized farming tips based on user data, soil conditions, and environmental factors.",
+        "🔹 Multi-Language Support: Designed for accessibility, offering support in multiple languages to help farmers worldwide."
+      ],
+      "technologies": ["Python", "Django", "React.js", "TensorFlow", "PostgreSQL", "Google Cloud"],
+      "why": "Many farmers lack access to advanced data analytics, leading to inefficiencies in crop management and yield forecasting. This portal provides an AI-powered solution to bridge the gap between traditional farming methods and modern agricultural technology.",
+      "development": [
+        "📌 Data Collection: Gathered agricultural datasets, including weather data, soil properties, and plant disease images.",
+        "📌 Model Training: Developed and fine-tuned machine learning models for crop yield prediction and disease identification.",
+        "📌 Web Development: Built an interactive frontend using React.js and a robust backend using Django.",
+        "📌 Cloud Deployment: Deployed the system on Google Cloud to ensure scalability and real-time data processing."
+      ],
+      "images": ["agriculture_portal_1.jpg", "agriculture_portal_2.jpg", "agriculture_portal_3.jpg"]
+    },
+
+    {
+      "id": 4,
+      "title": "Wildfire Risk Assessment",
+      "description": "This project focuses on assessing wildfire risk in Wildland–Urban Interface (WUI) regions using machine learning and Geographic Information Systems (GIS) data. By analyzing environmental factors and historical wildfire data, the model predicts potential fire outbreaks and helps authorities implement preventive measures.",
+      "features": [
+        "🔹 GIS-Based Risk Mapping: Uses geospatial analysis to identify high-risk wildfire zones.",
+        "🔹 Machine Learning Predictions: Applies predictive analytics to assess fire risk based on vegetation, climate, and historical fire occurrences.",
+        "🔹 Early Warning System: Provides alerts to authorities and local communities about potential wildfire threats.",
+        "🔹 Fire Spread Simulation: Simulates wildfire progression based on environmental conditions to help with emergency planning.",
+        "🔹 Data Visualization Dashboard: Displays interactive maps and risk assessment reports for better decision-making.",
+        "🔹 Cloud-Based Data Storage: Ensures secure and scalable storage of fire risk data using AWS."
+      ],
+      "technologies": ["Python", "TensorFlow", "QGIS", "GeoPandas", "AWS", "PostgreSQL"],
+      "why": "Wildfires pose a severe threat to ecosystems, human settlements, and infrastructure. Predicting fire-prone areas can help mitigate damage and save lives. This project provides an AI-powered solution to proactively assess wildfire risks using data-driven insights.",
+      "development": [
+        "📌 Data Preprocessing: Collected and cleaned geospatial wildfire datasets, integrating climate and vegetation data.",
+        "📌 Model Development: Trained deep learning models to predict fire probability based on input features.",
+        "📌 GIS Integration: Mapped fire risk zones using QGIS and GeoPandas for enhanced spatial analysis.",
+        "📌 Testing & Validation: Validated model accuracy using real-world wildfire case studies before deployment."
+      ],
+      "images": ["wildfire_risk_1.jpg", "wildfire_risk_2.jpg", "wildfire_risk_3.jpg"]
+    }
+     
+    
+  ]
+}
